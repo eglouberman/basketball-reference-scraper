@@ -19,7 +19,7 @@ def get_names_and_scrape_bbref():
         grab pickle files dataframe and 
         append pickle file to current name
     """
-    df = pd.read_excel(r'../Eligible_List.xlsx',sheet_name='Data')
+    df = pd.read_excel(r'../../Data/Eligible_List.xlsx',sheet_name='Data')
     eligible_df = df[df['Eligible?'] == 1]
 
     for row,col in eligible_df.iterrows():
@@ -31,7 +31,7 @@ def get_names_and_scrape_bbref():
 
 
 def main(id, year, name):
-    cmd_line = "scrapy crawl bballRef " + "-a id=" + id + " -a year=" + year + " -a name=" + "\"" + name + "\"" 
+    cmd_line = "scrapy crawl bballRef " + "-a id=" + id + "01 -a year=" + year + " -a name=" + "\"" + name + "\"" 
     print (cmd_line)
     os.system(cmd_line)
 
