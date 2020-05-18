@@ -18,7 +18,7 @@ This scraper is written in Python and can be used to download defensive stats fo
  
  * DRTG (Points allowed per 100 possessions)
    
- * MP (Minutes Played
+ * MP (Minutes Played)
    
   * Defensive BPM (Overall Box plus minus – offensive BPM)
    
